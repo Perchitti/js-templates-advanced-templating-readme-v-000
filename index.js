@@ -1,5 +1,5 @@
 Handlebars.registerHelper('comment_body',
-function(){
+function() {
   if(this.state === "closed"){
     return new
     Handlebars.SafeString(this.body)
@@ -14,5 +14,5 @@ function loadIssues() {
     for(var i = 0; i < issues.length; i++){
       var result = template(issues);
       document.getElementsByTagName("main")[0].innerHTML += result;
-    }
+  }
   }
